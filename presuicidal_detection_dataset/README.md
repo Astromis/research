@@ -12,3 +12,14 @@ Make sure, that you have all necessary dependencies and run
 
 1. dataset_analysis.ipynb to reproduce the results from Chapter 5
 2. paper_experiments.ipynb to reproduce the results from Chapter 6
+
+# Cite
+
+```bibtex
+@article{Buyanov2022TheDF,
+  title={The dataset for presuicidal signals detection in text and its analysis},
+  author={Igor Buyanov and Ilya Sochenkov},
+  journal={Computational Linguistics and Intellectual Technologies},
+  year={2022}
+}
+```
