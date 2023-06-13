@@ -4,7 +4,7 @@ This dir contains the materials to reproduce the experiments from paper ["Who is
 
 ## Where I can download the data
 
-Data can be downloaded [here]() and [here](). Create a directory called "data" and place the dataset there. Each dataset has its own `README.md`.
+Data can be downloaded by following links: [reply recovery](https://data.mendeley.com/datasets/xm86yszck2) and [thread reconstruction](https://data.mendeley.com/datasets/7rms5vdhf8). Create a directory called "data" and place the dataset there. Each dataset has its own `README.md`.
 
 The source Conversational RuBERT can ber downloaded [here](http://files.deeppavlov.ai/deeppavlov_data/bert/ru_conversational_cased_L-12_H-768_A-12.tar.gz).
 
