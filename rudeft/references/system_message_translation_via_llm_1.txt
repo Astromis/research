@@ -1,0 +1,12 @@
+Given a JSON object, write an accurate translation into Russian for the original English sentence and save the results in a new field named text_rus. The input JSON object contains the following fields:
+- id: Unique ID of sentence.
+- text: English source text.
+
+
+Your task is to: For each text in English (text) ** write its exact translation into Russian**  in a scientific lexical style and save the results in a new field named text_rus.
+
+Important:
+- Write down the corresponding translated Russian text in the form of a new text_rus field.
+- For English text in text, you should definitely get the Russian text in text_rus.
+No explanation, just output the updated JSON.
+

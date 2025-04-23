@@ -1,0 +1,91 @@
+<View>
+  <!-- связи  -->
+  <Relations editable="false" readOnly="true" >
+    <Relation value="Direct-Defines"/>
+    <Relation value="Indirect-Defines"/>
+    <Relation value="Refers-To"/>
+    <Relation value="AKA"/>
+    <Relation value="Supplements"/>
+    <Relation value="fragment"/>
+  </Relations>
+  
+  <View style="font-weight: bold; font-size: 16px; user-select: none; pointer-events: none;">
+    <Text name="text1" value="Оригинальная разметка DEFT"></Text>
+  </View>
+ 
+  <!-- 
+      интерфейс для английской разметки. 
+      комбинация readOnly="true" и selectionEnabled="false" позволила запретить править в ней лейблы,
+      но удалять/изменять связи по прежнему можно
+    -->
+  <View style="display:flex;align-items:start;gap:8px;flex-direction:column-reverse">
+    <Text name="text" value="$text" readOnly="true" selectionEnabled="false" />
+    <Labels name="label" toName="text" showInline="true" readOnly="true" selectionEnabled="false" >
+      <Label value="Term" background="#FF5733"/>
+      <Label value="Term-frag" background="#FF9966"/>
+      <Label value="Alias-Term" background="#FFC300"/>
+      <Label value="Alias-Term-frag" background="#FFE500"/>
+      <Label value="Ordered-Term" background="#33FF57"/>
+      <Label value="Referential-Term" background="#3357FF" />
+      <Label value="Definition" background="#C70039"/>
+      <Label value="Definition-frag" background="#FF005C"/>
+      <Label value="Secondary-Definition" background="#f68eb6"/>
+      <Label value="Ordered-Definition" background="#5bc0ec"/>
+      <Label value="Referential-Definition" background="#d87efb"/>
+      <Label value="Qualifier" background="#739dc9"/>
+    </Labels>
+  </View>
+  
+  <View style="border-top: 1px solid #ccc; margin: 20px 0;"></View>
+
+  <View style="font-weight: bold; font-size: 16px; user-select: none; pointer-events: none;">
+    <Text name="text2" value="Разметить предложение на русском языке:"></Text>
+  </View>
+  
+  <!-- интерфейс для русской разметки.  -->
+  <View style="display:flex;align-items:start;gap:8px;flex-direction:column-reverse">
+    <Text name="text_rus" value="$text_rus" granularity="word"/>
+    <Labels name="label_rus" toName="text_rus" showInline="true">
+      <Label value="Term" background="#FF5733"/>
+      <Label value="Term-frag" background="#FF9966"/>
+      <Label value="Alias-Term" background="#FFC300"/>
+      <Label value="Alias-Term-frag" background="#FFE500"/>
+      <Label value="Ordered-Term" background="#33FF57"/>
+      <Label value="Referential-Term" background="#3357FF"/>
+      <Label value="Definition" background="#C70039"/>
+      <Label value="Definition-frag" background="#FF005C"/>
+      <Label value="Secondary-Definition" background="#f68eb6"/>
+      <Label value="Ordered-Definition" background="#5bc0ec"/>
+      <Label value="Referential-Definition" background="#d87efb"/>
+      <Label value="Qualifier" background="#739dc9"/>
+    </Labels>
+  </View>
+
+  <View style="border-top: 1px solid #ccc; margin: 20px 0;"></View>
+  
+  <!-- интерфейс кнопки о плохой разметке в английском.  -->
+  <View>
+    <View style="font-weight: bold; font-size: 16px; user-select: none; pointer-events: none;">
+      <Text name="text3" value="Проблемы английской разметки (отметить нужное):"></Text>
+    </View>
+    <Choices name="bad_pre_annotated_data" toName="text1" choice="multiple" showInLine="false">
+     <Choice alias="bad_word_marking" value="Разметка сущностей в английском не совпадает с окончанием слов."/>
+     <Choice alias="strange" value="Подозрительно (когда в ориг. разметке выделены лишние слова ('are', 'which' и прочее)."/>
+    </Choices>
+  </View>
+
+  <View style="border-top: 1px solid #ccc; margin: 20px 0;"></View>
+  
+  <!-- интерфейс кнопки о плохом переводе на русский.  -->
+  <View>
+    <View style="font-weight: bold; font-size: 16px; user-select: none; pointer-events: none;">
+      <Text name="text4" value="Проблемы в русском переводе (отметить нужное):"></Text>
+    </View>
+    <Choices name="bad_rus_text" toName="text1" choice="multiple" showInLine="false">
+     <Choice alias="misspell_rus" value="В русском переводе содержится опечатка (размечаем)."/>
+     <Choice alias="bad_translate" value="Топорный перевод - машинный перевод, который не мешает восприятию лейблов (размечаем)."/>
+     <Choice alias="wrong_translate" value="Неправильный перевод - машинный перевод, который мешает восприятию лейблов (не размечаем)."/>
+    </Choices>
+  </View>
+
+</View>

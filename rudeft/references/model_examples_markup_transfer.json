@@ -1,0 +1,63 @@
+{
+    "examples": [
+        {
+            "input": {"id":"b022fa9f75bb470a849651a912bc9b94","text":"Each type of pigment can be identified by the specific pattern of wavelengths it absorbs from visible light , which is the absorption spectrum .","definition_label":1,"source_file":"data\/source_txt\/t1_biology_0_101.deft","tokens":["Each","type","of","pigment","can","be","identified","by","the","specific","pattern","of","wavelengths","it","absorbs","from","visible","light",",","which","is","the","absorption","spectrum","."],"iob_tags":["B-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","O","O","O","B-Term","I-Term","I-Term","O"],"spans":[["0","107","Definition","T2","Each type of pigment can be identified by the specific pattern of wavelengths it absorbs from visible light"],["119","142","Term","T1","the absorption spectrum"]],"relations":[["T2","T1","Direct-Defines"]],"text_rus":"\u041a\u0430\u0436\u0434\u044b\u0439 \u0442\u0438\u043f \u043f\u0438\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u0438\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u043e\u0432\u0430\u043d \u043f\u043e \u0441\u043f\u0435\u0446\u0438\u0444\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0435 \u0434\u043b\u0438\u043d \u0432\u043e\u043b\u043d, \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u043e\u043d \u043f\u043e\u0433\u043b\u043e\u0449\u0430\u0435\u0442 \u043e\u0442 \u0432\u0438\u0434\u0438\u043c\u043e\u0433\u043e \u0441\u0432\u0435\u0442\u0430, \u0447\u0442\u043e \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0441\u043f\u0435\u043a\u0442\u0440\u043e\u043c \u043f\u043e\u0433\u043b\u043e\u0449\u0435\u043d\u0438\u044f."},
+            "result": {
+                "id": "b022fa9f75bb470a849651a912bc9b94",
+                "text": "Each type of pigment can be identified by the specific pattern of wavelengths it absorbs from visible light , which is the absorption spectrum .",
+                "definition_label": 1,
+                "source_file": "data/source_txt/t1_biology_0_101.deft",
+                "tokens": [
+                  "Each", "type", "of", "pigment", "can", "be", "identified", "by", "the", "specific", "pattern", "of", "wavelengths", "it", "absorbs", "from", "visible", "light", ",", "which", "is", "the", "absorption", "spectrum", "."
+                ],
+                "iob_tags": [
+                  "B-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "O", "O", "O", "B-Term", "I-Term", "I-Term", "O"
+                ],
+                "spans": [
+                  ["0", "107", "Definition", "T2", "Each type of pigment can be identified by the specific pattern of wavelengths it absorbs from visible light"],
+                  ["119", "142", "Term", "T1", "the absorption spectrum"]
+                ],
+                "relations": [["T2", "T1", "Direct-Defines"]],
+                "text_rus": "Каждый тип пигмента может быть идентифицирован по специфической структуре длин волн, которую он поглощает от видимого света, что является спектром поглощения.",
+                "spans_rus": [
+                  ["Definition", "T2","Каждый тип пигмента может быть идентифицирован по специфической структуре длин волн, которую он поглощает от видимого света"],
+                  ["Term", "T1","спектром поглощения"]
+                ]
+            }
+        },
+        {
+            "input": {"id":"258e3bba0d5e4934918d5f64142df310","text":"An individual with an error in chromosome number is described as aneuploid , a term that includes monosomy ( loss of one chromosome ) or trisomy ( gain of an extraneous chromosome ) .","definition_label":1,"source_file":"data\/source_txt\/t1_biology_0_101.deft","tokens":["An","individual","with","an","error","in","chromosome","number","is","described","as","aneuploid",",","a","term","that","includes","monosomy","(","loss","of","one","chromosome",")","or","trisomy","(","gain","of","an","extraneous","chromosome",")","."],"iob_tags":["B-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","I-Definition","O","O","O","B-Term","O","O","O","O","O","B-Term","O","B-Definition","I-Definition","I-Definition","I-Definition","O","O","B-Term","O","B-Definition","I-Definition","I-Definition","I-Definition","I-Definition","O","O"],"spans":[["0","48","Definition","T163","An individual with an error in chromosome number"],["65","74","Term","T162","aneuploid"],["98","106","Term","T165","monosomy"],["109","131","Definition","T166","loss of one chromosome"],["137","144","Term","T167","trisomy"],["147","179","Definition","T168","gain of an extraneous chromosome"]],"relations":[["T168","T167","Direct-Defines"],["T163","T162","Direct-Defines"],["T166","T165","Direct-Defines"]],"text_rus":"\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0443\u043c \u0441 \u043e\u0448\u0438\u0431\u043e\u0447\u043d\u044b\u043c \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e\u043c \u0445\u0440\u043e\u043c\u043e\u0441\u043e\u043c \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043a\u0430\u043a \u0430\u043d\u0435\u0443\u043f\u043b\u043e\u0438\u0434 - \u0442\u0435\u0440\u043c\u0438\u043d, \u0432\u043a\u043b\u044e\u0447\u0430\u044e\u0449\u0438\u0439 \u043c\u043e\u043d\u043e\u0441\u043e\u043c\u0438\u044e (\u043f\u043e\u0442\u0435\u0440\u044f \u043e\u0434\u043d\u043e\u0439 \u0445\u0440\u043e\u043c\u043e\u0441\u043e\u043c\u044b) \u0438\u043b\u0438 \u0442\u0440\u0438\u0441\u043e\u043c\u0438\u044e (\u0443\u0432\u0435\u043b\u0438\u0447\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u0442\u043e\u0440\u043e\u043d\u043d\u0435\u0439 \u0445\u0440\u043e\u043c\u043e\u0441\u043e\u043c\u044b)."},
+            "result": {
+                "id": "258e3bba0d5e4934918d5f64142df310",
+                "text": "An individual with an error in chromosome number is described as aneuploid , a term that includes monosomy ( loss of one chromosome ) or trisomy ( gain of an extraneous chromosome ) .",
+                "definition_label": 1,
+                "source_file": "data/source_txt/t1_biology_0_101.deft",
+                "tokens": [
+                  "An", "individual", "with", "an", "error", "in", "chromosome", "number", "is", "described", "as", "aneuploid", ",", "a", "term", "that", "includes", "monosomy", "(", "loss", "of", "one", "chromosome", ")", "or", "trisomy", "(", "gain", "of", "an", "extraneous", "chromosome", ")", "."
+                ],
+                "iob_tags": [
+                  "B-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "O", "O", "O", "B-Term", "O", "O", "O", "O", "O", "B-Term", "O", "B-Definition", "I-Definition", "I-Definition", "I-Definition", "O", "O", "B-Term", "O", "B-Definition", "I-Definition", "I-Definition", "I-Definition", "I-Definition", "O", "O"
+                ],
+                "spans": [
+                  ["0", "48", "Definition", "T163", "An individual with an error in chromosome number"],
+                  ["65", "74", "Term", "T162", "aneuploid"],
+                  ["98", "106", "Term", "T165", "monosomy"],
+                  ["109", "131", "Definition", "T166", "loss of one chromosome"],
+                  ["137", "144", "Term", "T167", "trisomy"],
+                  ["147", "179", "Definition", "T168", "gain of an extraneous chromosome"]
+                ],
+                "relations": [["T168", "T167", "Direct-Defines"], ["T163", "T162", "Direct-Defines"], ["T166", "T165", "Direct-Defines"]],
+                "text_rus": "Индивидуум с ошибочным количеством хромосом описывается как анеуплоид - термин, включающий моносомию (потеря одной хромосомы) или трисомию (увеличение посторонней хромосомы).",
+                "spans_rus": [
+                  ["Definition", "T163", "Индивидуум с ошибочным количеством хромосом"],
+                  ["Term", "T162", "анеуплоид"],
+                  ["Term", "T165", "моносомию"],
+                  ["Definition", "T166", "потеря одной хромосомы"],
+                  ["Term", "T167", "трисомию"],
+                  ["Definition", "T168", "увеличение посторонней хромосомы"]
+                ],
+                "relations_rus": [["T163", "T162", "Direct-Defines"], ["T166", "T165", "Direct-Defines"], ["T168", "T167", "Direct-Defines"]]
+            }              
+        }
+    ]
+}
