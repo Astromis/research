@@ -1,0 +1,23 @@
+<View>
+  <Header value="Проверка перевода"/>
+
+  <View style="font-weight: bold; font-size: 15px; margin-top: 15px;">
+    <Text name="text1" value="Оригинальный английский текст:"></Text>
+  </View>  
+  <!-- Оригинальный текст на английском -->
+  <Text name="text" value="$text" editable="false"/>
+  
+  <View style="font-weight: bold; font-size: 15px; margin-top: 15px;">
+    <Text name="text2" value="Машинный перевод на русский язык (при проверке можно текст скорректировать):"></Text>
+  </View>  
+  <!-- Поле для редактирования машинного перевода на русском -->
+  <TextArea name="text_rus" value="$text_rus" toName="text" rows="5"/>
+  
+  <View style="font-weight: bold; font-size: 15px; ">
+    <Text name="text3" value="Если перевод корректировали, отметьте галочку:"></Text>
+  </View> 
+  <!-- Флажок для отметки неправильного перевода -->
+  <Choices name="translation_status" toName="text" choice="single">
+    <Choice alias="wrong_translate" value="Неправильный перевод"/>
+  </Choices>
+</View>

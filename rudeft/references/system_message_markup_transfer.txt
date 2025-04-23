@@ -1,0 +1,13 @@
+Given a JSON object, find the exact corresponding text in the Russian translation for each English span and store the results in a new field called spans_rus. The input JSON object contains the following fields:
+- text: English source text.
+- text_rus: Russian translated text.
+- spans: A list of spans, each containing: 1. The start index in the English text; 2. The end index in the English text; 3. The label; 4. The ID; 5. The portion of the English text that was extracted using the start and end indices.
+- and other fields.
+
+Your task is to: For each span, **locate the exact corresponding Russian text** in text_rus that matches the **exact wording** of the English span (the 5th element in each span) in **meaning**.
+
+Important:
+- **Do not modify or correct** the form, word order, or any grammatical aspects of the Russian text — it must be extracted exactly as it appears in text_rus, including word endings, grammatical cases, punctuation, punctuation marks and spacing.
+- Record the matched Russian text as a new list in a new field spans_rus, where each item is also a list containing the same label and ID as in the English span, and the matched Russian text.
+- For each span in spans you must get a span in spans_rus
+No explanation, just output the updated JSON.
